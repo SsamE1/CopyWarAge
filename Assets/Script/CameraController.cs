@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     public float panBorderThickness = 150f;  // 화면 가장자리에 도달했을 때의 영역
 
     void Start(){
-        Vector3 pos=new Vector3(-5f,-0.8f,-0.5f);
+        Vector3 pos=new Vector3(-5f,-1f,-0.5f);
         transform.position=pos;
     }
     private void Update()
