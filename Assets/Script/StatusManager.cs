@@ -12,7 +12,8 @@ public class StatusManager : MonoBehaviour
     public int Exp=0;
     public int CurrentHp=500;
     private TextMeshPro HpText;
-    
+
+
     public void Awake(){
         TotalGold.text=Gold.ToString();
         TotalExp.text=Exp.ToString();
