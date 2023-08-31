@@ -9,10 +9,10 @@ public class StatusManager : MonoBehaviour
     public TextMeshProUGUI TotalExp;
     public GameObject MyHp;
     public GameObject EnemyHp;
-    public int Gold=175;
-    public int Exp=0;
-    public int MyCurrentHp=500;
-    public int EnemyCurrentHp=500;
+    static public int Gold=175;
+    static public int Exp=0;
+    static public int MyCurrentHp=500;
+    static public int EnemyCurrentHp=500;
     private TextMeshPro MyHpText;
     private TextMeshPro EnemyHpText;
 
