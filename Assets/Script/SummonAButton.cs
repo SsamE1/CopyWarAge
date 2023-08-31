@@ -6,7 +6,9 @@ using TMPro;
 
 public class SummonAButton : MonoBehaviour
 {   
+    public StatusManager statusManager;
     public TextMeshProUGUI priceTag;
+    
     public void PointerOn()
     {
         priceTag.text="$ 15";
@@ -16,6 +18,9 @@ public class SummonAButton : MonoBehaviour
     {
         priceTag.text = ""; // 버튼 위에서 마우스가 나가면 가격 정보를 지움
     }
-    
+    public void clickButton(){
+        if( statusManager.Gold>=15)statusManager.Gold-=15;
+        else Debug.Log("돈 부족");
+    }
     
 }
